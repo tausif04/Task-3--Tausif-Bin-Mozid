@@ -73,6 +73,35 @@ Only `Product`, `PaymentMethod`, `OrderStatus`, `ReferralSource`, and
 > Upload `ecommerce_orders.csv` to your Google Colab session (or mount
 > Google Drive and update the file path) before running the notebook.
 
+### Example Usage
+**User Preferences:**
+- Debit Card
+- Instagram
+- SAVE10
 
+**Top 3 Recommended Products:**
+```
+Product: Laptop
+Similarity Score: 0.57
+
+Product: Desk
+Similarity Score: 0.57
+
+Product: Phone
+Similarity Score: 0.57
+```
+*(Actual results will depend on the dataset and cosine similarity scores.)*
+
+### Libraries Used
+- `pandas` — for loading and handling the dataset
+- `scikit-learn` — for `TfidfVectorizer` and `cosine_similarity`
+
+### Files
+- `Ecommerce_Product_Recommender.ipynb` — the main Google Colab notebook
+- `ecommerce_orders.csv` — the provided e-commerce order dataset
+- `requirements.txt` — Python dependencies
+- `README.md` — this file
+
+### Key Skills Demonstrated
 Logic building, pattern matching, and content-based recommendation concepts
 using the IPO (Input-Process-Output) architecture.
